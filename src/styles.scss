@@ -19,7 +19,7 @@
 
 
 .gallery{
-    width: 900px;
+    width: 100%;
     display: flex;
     overflow-x: scroll;
 }
@@ -35,6 +35,7 @@
 
 .gallery div img{
     width: 100%;
+    height: auto;
     transition: transform 0.5s;
 }
 
@@ -59,4 +60,16 @@
 .gallery div img:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .gallery div {
+    grid-template-columns: auto auto; /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery div {
+    grid-template-columns: auto; /* 1 column on mobile */
+  }
 }
