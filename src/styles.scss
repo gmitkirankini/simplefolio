@@ -62,11 +62,6 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-  .gallery div {
-    grid-template-columns: auto auto; /* 2 columns on tablets */
-  }
-}
 
 @media (max-width: 480px) {
   .gallery div {
